@@ -1,0 +1,50 @@
+# Eclipse / Spring Tool Suite
+.metadata/
+.settings/
+.classpath
+.project
+
+# Maven
+target/
+**/target/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+
+.metadata/
+
+# Eclipse
+.metadata/
+.settings/
+.project
+
+# Maven
+target/
+
+# Uploaded files
+**/uploads/
+
+# IDE
+.classpath
+
+# Temporary files
+*.log
