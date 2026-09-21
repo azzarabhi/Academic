@@ -11,14 +11,11 @@ public class Module {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
     private String code;
-
     private String nom;
-
     private Double coefficient;
     private Long teacherId; 
-    private Long classeId;  // ← ZIDHA
+    private Long classeId;  
     private Integer partie; 
    
    

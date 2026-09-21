@@ -1,11 +1,10 @@
 package com.example.demo.entity;
-import java.time.LocalDate;
 
+import java.time.LocalDate;
 
 import jakarta.persistence.*;
 
 @Entity
-
 public class Absence {
 
     @Id
@@ -19,62 +18,67 @@ public class Absence {
     private LocalDate date;
 
     private boolean justifiee;
+
     private String heure;
 
+    public Absence() {
+    }
 
+    public Absence(Long id, Long studentId, Long moduleId,
+                   LocalDate date, boolean justifiee, String heure) {
+        this.id = id;
+        this.studentId = studentId;
+        this.moduleId = moduleId;
+        this.date = date;
+        this.justifiee = justifiee;
+        this.heure = heure;
+    }
 
-	public Absence(Long id, Long studentId, Long moduleId, LocalDate date, boolean justifiee, String heure) {
-		super();
-		this.id = id;
-		this.studentId = studentId;
-		this.moduleId = moduleId;
-		this.date = date;
-		this.justifiee = justifiee;
-		this.heure = heure;
-	}
+    public Long getId() {
+        return id;
+    }
 
-	public Absence() {}
+    public void setId(Long id) {
+        this.id = id;
+    }
 
-	public Long getId() {
-		return id;
-	}
+    public Long getStudentId() {
+        return studentId;
+    }
 
-	public void setId(Long id) {
-		this.id = id;
-	}
+    public void setStudentId(Long studentId) {
+        this.studentId = studentId;
+    }
 
-	public Long getStudentId() {
-		return studentId;
-	}
+    public Long getModuleId() {
+        return moduleId;
+    }
 
-	public void setStudentId(Long studentId) {
-		this.studentId = studentId;
-	}
+    public void setModuleId(Long moduleId) {
+        this.moduleId = moduleId;
+    }
 
-	public Long getModuleId() {
-		return moduleId;
-	}
+    public LocalDate getDate() {
+        return date;
+    }
 
-	public void setModuleId(Long moduleId) {
-		this.moduleId = moduleId;
-	}
+    public void setDate(LocalDate date) {
+        this.date = date;
+    }
 
-	public LocalDate getDate() {
-		return date;
-	}
+    public boolean isJustifiee() {
+        return justifiee;
+    }
 
-	public void setDate(LocalDate date) {
-		this.date = date;
-	}
+    public void setJustifiee(boolean justifiee) {
+        this.justifiee = justifiee;
+    }
 
-	public boolean isJustifiee() {
-		return justifiee;
-	}
+    public String getHeure() {
+        return heure;
+    }
 
-	public void setJustifiee(boolean justifiee) {
-		this.justifiee = justifiee;
-	}
-	public String getHeure() { return heure; }
-	public void setHeure(String heure) { this.heure = heure; }
-    
+    public void setHeure(String heure) {
+        this.heure = heure;
+    }
 }
